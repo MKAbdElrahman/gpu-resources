@@ -5,7 +5,10 @@ from __future__ import annotations
 from dataclasses import dataclass, field, fields
 from pathlib import Path
 
-import tomllib
+try:
+    import tomllib
+except ModuleNotFoundError:  # Python < 3.11
+    import tomli as tomllib  # type: ignore[no-redef]
 
 DEFAULT_CONFIG_PATH = Path.home() / ".config" / "gpu-resources" / "config.toml"
 

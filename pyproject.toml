@@ -26,7 +26,9 @@ classifiers = [
     "Topic :: System :: Distributed Computing",
     "Typing :: Typed",
 ]
-dependencies = []
+dependencies = [
+    "tomli>=2.0.0; python_version < '3.11'",
+]
 
 [project.optional-dependencies]
 dev = [
