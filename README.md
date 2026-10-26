@@ -10,8 +10,10 @@ This package intentionally knows nothing about robotics stacks, NATS, Rerun, or 
 ## Install
 
 ```bash
+# clone, or use the local checkout under robotics-foundations
 git clone https://github.com/MKAbdElrahman/gpu-resources.git
-cd gpu-resources
+cd gpu-resources   # or: cd ~/robotics-foundations/gpu-resources
+
 uv venv .venv
 uv pip install -e '.[dev]'
 source .venv/bin/activate
